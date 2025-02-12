@@ -1,0 +1,148 @@
+.js-cart-container {
+  margin: 40px auto;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Message pour le panier vide */
+.js-cart-container p {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Bloc pour chaque produit dans le panier */
+.cart-item-container {
+  display: flex;
+  background-color: #fafafa;
+  padding: 20px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+flex-direction: row;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.cart-item-container:hover {
+  background-color: #f1f1f1;
+}
+
+/* Image du produit */
+.product-image {
+  width: 120px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Détails du produit */
+.cart-item-details {
+  flex-grow: 1;
+  padding-right: 20px;
+}
+
+.product-name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 18px;
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+/* Bloc de la quantité du produit */
+.js-quantity-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.js-quantity-container span {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.js-new-quantity-input {
+  width: 60px;
+  height: 30px;
+  padding: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.link-primary {
+  font-size: 16px;
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.link-primary:hover {
+  text-decoration: underline;
+}
+
+/* Options de livraison */
+.delivery-options {
+  margin-top: 20px;
+}
+
+.delivery-options-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.delivery-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.delivery-option input {
+  margin-right: 10px;
+}
+
+.delivery-option-date {
+  font-size: 14px;
+  color: #555;
+}
+
+.delivery-option-price {
+  font-size: 16px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* Résponsive pour les petites tailles d'écran */
+@media (max-width: 768px) {
+  .cart-item-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product-image {
+    width: 100px;
+  }
+
+  .cart-item-details {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .js-quantity-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
